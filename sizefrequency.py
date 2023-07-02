@@ -45,6 +45,6 @@ def update_graph(frame):
     time.sleep(1)
 
 
-ani = FuncAnimation(plt.gcf(), update_graph, interval=1000)
+ani = FuncAnimation(plt.gcf(), update_graph, interval=1000, cache_frame_data=False)
 
 plt.show()
