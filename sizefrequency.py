@@ -47,4 +47,9 @@ def update_graph(frame):
 
 ani = FuncAnimation(plt.gcf(), update_graph, interval=1000, cache_frame_data=False)
 
+with open('logo.txt', 'r') as logo_file:
+    logo = logo_file.read()
+
+print(logo)
+
 plt.show()
